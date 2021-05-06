@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<body id="page-top" class="body">
+    <header class="masthead" [ngStyle]="{'border': '25px solid black'}">
+  <main class="d-flex align-items-center ">
+    <div class="container">
+      <div class="card">
+        <div class="row ">
+          <div class="col-md-5">
+            <img src="/assets/images/loginimage.jpg" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="brand-wrapper">
+                <img src="/assets/images/lgsmall.jpg" alt="logo" class="logo">
+              </div>
+              <span *ngIf="this.authService.isLoggedin()">
+           
+              </span>
+              <p class="login-card-description">Sign into your account</p>
+
+
+
+
+              <form #loginForm="ngForm" name="register_form"  *ngIf="!this.authService.isLoggedin()" ngNativeValidate>
+                
+                <div class="col-md-8">
+                
+                  <label for="usernae" class="form-label">Username</label>
+                  <input type="text" name="username" id="username" class="form-control" [(ngModel)]="this.username" required>
+                  <span class="invalid-feedback">Please enter username</span>
+                </div>
+                <div class="col-md-8">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" name="password" id="password" class="form-control" [(ngModel)]="this.password" required>
+                  <span class="invalid-feedback">Please enter password</span>
+                </div>
+
+                  <input name="login" id="login" class="btn btn-block login-btn mb-4" (click)="this.login()"  type="submit" value="Login">
+                </form>
+            </div>
+          </div>
+       
+      </div>
+    </div>
+    </div>
+  </main>
+ </header></body>
+</html>

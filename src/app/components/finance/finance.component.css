@@ -1,0 +1,34 @@
+table{
+    color:rgb(114, 84, 84);
+}
+h3{
+    font-weight: bolder;
+}
+table th,td,tr{
+    color:lightslategray;
+    font-weight: 400;
+}
+.waves-effect{
+    color:white;
+    background-color: navy;
+    width: 150px;
+    height: 40px;
+    
+    border-radius: 27.5px;
+}
+input{
+    width:35px;
+}
+.card{
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    overflow: hidden;  
+}
+img{
+padding-right: 10px;
+border-radius: 27.5px;
+width:40px;
+height: 30px;
+
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: "Karla", sans-serif;
+    min-height: 100vh;
+   }
+
+  .brand-wrapper {
+    margin-bottom: 19px; }
+    .brand-wrapper .logo {
+      height: 37px; }
+      .login-card h4{
+          color:blue;
+      }
+h4{
+  color:white;
+  margin-left: auto;
+  margin-right: auto ;
+  text-shadow: 0 0 20px rgb(121, 65, 65);
+}
+p{
+  font-size: 40px;
+  color:rgb(219, 152, 152);
+  font-weight: 600;
+  padding-left: 70px;
+
+}
+p .material-icons{
+  color: white;
+  text-shadow: 0 0 20px rgb(121, 65, 65);  
+font-size: 70px;
+}
+
+h1{
+ 
+  padding-bottom: 30px;
+  font-weight: 600;
+  text-shadow: 0 0 20px rgb(121, 65, 65);
+}
+
+
+button{
+  background-image: linear-gradient(to right, #071a47 0%, #754eb4 51%, #4776E6 100%);
+  text-align: center;
+  transform: scale(1.3);
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px rgb(121, 65, 65);
+  border-radius: 25px;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  border: 0;
+  font-size: 15px;
+  font-weight:600;
+  margin-bottom: 20px;
+  font-family:unset;
+  margin-top:40px
+  
+ 
+}
+button:hover{
+background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+#folder .material-icons{
+
+color: rgba(121, 104, 25, 0.596);
+padding-right: 10px;
+padding-top:5px
+
+}
+#money .material-icons{
+
+  color: rgba(71, 67, 252, 0.596);
+  size: 40px;
+  
+  }
+
+
+      table {
+          color:blue;
+
+      }
+      td{
+          color:black;
+      }
+      span{
+          color: black;
+      }
+  .login-card {
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    overflow: hidden;
+  width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 48em
+ 
+
+}
+    
+  

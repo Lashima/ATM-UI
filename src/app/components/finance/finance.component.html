@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body id="page-top" class="body">
+      <header class="masthead" [ngStyle]="{'border': '25px solid black'}">
+    <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+      <div class="container">
+                <div class="row h-100">
+                    <div class="col s12 m7">
+                        <div class="card horizontal">
+                          <div class="card-image">
+                            
+                          </div>
+                          <div class="card-stacked">
+                            <div class="card-content">
+                              <h3>Search Financial Institutions :</h3>
+                              <form>
+                                
+                                <div class="form-group has-search">
+                                  
+                                  <input #inputval id="inputval" type="text" name="inputval" class="form-control"  [formControl]="filter" placeholder="Search your institution" >
+                                  <a class="waves-effect waves-light btn" [hidden]="!inputval.value"  routerLink='/login'>Next</a>
+                                </div>
+                                  
+                              </form>
+                              
+                            
+
+
+                              <table id="mytable" class="table table-striped">
+                
+                                <tbody>
+                                <tr *ngFor="let bank of banks$ | async; ">
+                                 
+              
+                                  <td>
+                                    <img [src]="bank.logo" >
+                                    <ngb-highlight [result]="bank.name" [term]="filter.value">{{bank.name}}</ngb-highlight>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>                          
+                            </div>                 
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                
+            </div></main>
+        </header>
+        
+    
+    </body>
+</html>
+

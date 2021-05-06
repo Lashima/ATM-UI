@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Template</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body id="page-top" class="body ">
+    <header class="masthead "[ngStyle]="{'border': '25px solid black'}">
+      <p> <i class="material-icons" routerLink='/user'>arrow_back</i>Menu</p>
+  <main class="d-flex centered" >
+    
+  
+    <div class="col-md-12 text-center ">
+      
+      <div class="panel panel-default">
+        <div class="userprofile social " id="btn">
+          <h1 >Withdraw Cash</h1>
+         </div></div>
+
+     
+     
+      <h4>Withdraw from: My Account</h4>
+      <div class="card login-card">
+        
+        <table class="table table-striped centered">
+            
+            <tbody>
+            <tr *ngFor="let e of elements;index as i">
+          
+              <td id="folder">
+                <i class="material-icons circle">folder</i>{{ e.file }}
+              </td>
+              <td id="money"><i class="material-icons">attach_money</i>{{ e.amount | number }}</td>
+              <td ><img [src]="e.userlist" class="mr-2" [ngStyle]="{'width': '40px'}"></td>
+            </tr>
+            </tbody>
+          </table>
+         
+      </div>
+      <h4>Please select the amount:</h4>
+        <div class="card login-card" >
+            <div class="row">
+                <div class="col md 6">
+                    <span class="title">For:</span>
+                    <h4><i class="material-icons">attach_money</i>300.1078</h4>
+                </div>
+                <div class="col md 6">
+                    <span class="title">You'll get:</span>
+                    <h4><i class="material-icons">euro_symbol</i>1078.78</h4>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+              <div class=row>
+                <div class="col md-6">
+                    <button class="waves-effect waves-light btn-large" routerLink='/thankyou'><i class="material-icons right">chevron_right</i>WITHDRAW</button>
+                </div>
+                <div class="col md-6">
+                   <button class="waves-effect waves-light btn-large" routerLink='/user'><i class="material-icons right">chevron_right</i>RESET</button>
+               </div>
+            </div>
+
+    </div></div>
+      
+    
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</header></body>
+</html>
